@@ -1,0 +1,27 @@
+OnLoadMission = "Dynamic Wargames.";
+onLoadName = "SinFrame";
+dev = "Sindustries";
+author = "Sinbane";
+//briefingName = "briefingname";
+overviewText = "Invade and secure all critical zones to gain victory.";
+//overviewPicture = "\a3\Missions_F_Beta\data\img\showcase_commanding_I_overview_ca.paa";
+//overviewPicture = "rtipic.paa";
+//LoadScreen = "rtipic.paa";
+
+class Header
+{
+ gameType = COOP;            //DM, Team, Coop, ...
+ minPlayers = 1;             //min # of players the mission supports
+ maxPlayers = 12;            //Max # of players the mission supports
+};
+
+respawn = 3;
+respawnDelay = 10;
+disabledAI = 1;
+enableDebugConsole = 1;
+
+#include "params.hpp"
+#include "dialog\defines.hpp"
+#include "dialog\request.hpp"
+#include "dialog\specops\identities.hpp"
+#include "support\support.hpp"
